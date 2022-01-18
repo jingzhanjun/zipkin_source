@@ -187,6 +187,7 @@ following. JDK 11 is required to compile the source.
 $ ./mvnw -q --batch-mode -DskipTests --also-make -pl zipkin-server clean install
 # Run the server
 $ java -jar ./zipkin-server/target/zipkin-server-*exec.jar
+$ java -jar ./zipkin-server/target/zipkin-server-*exec.jar --STORAGE_TYPE=mysql --MYSQL_DB=zipkin --MYSQL_USER=root --MYSQL_PASS=12sinaqqmsn63--MYSQL_HOST=localhost--MYSQL_TCP_PORT=3306
 ```
 
 ## Artifacts
